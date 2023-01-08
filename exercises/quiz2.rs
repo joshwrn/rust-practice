@@ -37,7 +37,7 @@ mod my_module {
                 Command::Uppercase => output.push(string.to_uppercase()),
                 Command::Trim => output.push(string.trim().to_string()),
                 Command::Append(num) => {
-                    let mut s = String::from(string.to_string());
+                    let mut s = string.to_string();
                     let mut n = 0;
                     loop {
                         s = s + "bar";
